@@ -35,23 +35,21 @@ class Song
     end
       artist_count
 
-
+    
 
     # another way
     # @@artists.uniq.map { |artist| [artist, @@artists.count(artist)] }.to_h
   end
 
   def self.genre_count
-    genre_count = @@genres.group_by{ |genre| genre} 
-
-    # genre_count = Hash.new(0)
-    # @@genres.each do |genre|
-    #   genre_count[genre] += 1
-    # end
-    # genre_count
+    genre_count = Hash.new(0)
+    @@genres.each do |genre|
+      genre_count[genre] += 1
+    end
+    genre_count
 
     # another way
     # @@genres.uniq.map { |genre| [genre, @@genres.count(genre)] }.to_h
-  #end
+  end
 
 end
