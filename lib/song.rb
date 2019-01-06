@@ -51,8 +51,8 @@ class Song
     # genre_count
 
 
-    @@genres.uniq.map { |genre| [genre, @@genres.count(genre)] binding.pry}.to_h
-    
+    @@genres.uniq.map { |genre| [genre, @@genres.count(genre)] }.to_h
+    binding.pry
   end
 
 end
