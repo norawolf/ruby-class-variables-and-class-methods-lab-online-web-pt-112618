@@ -35,7 +35,7 @@ class Song
     end
       artist_count
 
-    
+
 
     # another way
     # @@artists.uniq.map { |artist| [artist, @@artists.count(artist)] }.to_h
