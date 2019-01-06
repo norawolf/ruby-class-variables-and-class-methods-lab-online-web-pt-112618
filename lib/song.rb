@@ -44,11 +44,11 @@ class Song
   def self.genre_count
 #    genre_count = @@genres.group_by { |genre| genre} 
 
-    genre_count = Hash.new(0)
-    @@genres.each do |genre|
-      genre_count[genre] += 1
-    end
-    genre_count
+    # genre_count = Hash.new(0)
+    # @@genres.each do |genre|
+    #   genre_count[genre] += 1
+    # end
+    # genre_count
 
     # another way
     # @@genres.uniq.map { |genre| [genre, @@genres.count(genre)] }.to_h
