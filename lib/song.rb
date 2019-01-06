@@ -50,7 +50,7 @@ class Song
     # end
     # genre_count
 
-    another way
+
     @@genres.uniq.map { |genre| [genre, @@genres.count(genre)] }.to_h
     binding.pry
   end
