@@ -52,6 +52,6 @@ class Song
 
     # another way
     # @@genres.uniq.map { |genre| [genre, @@genres.count(genre)] }.to_h
-  end
+  #end
 
 end
